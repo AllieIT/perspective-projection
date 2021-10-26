@@ -29,6 +29,7 @@ def init():
     cam = Camera(Vector3(0, 0, 0), 5, Vector2(1280, 720))
     display = pg.display.set_mode((cam.resolution.x, cam.resolution.y))
     main_loop(display, initialize_cube(), cam)
+    print("Hello")
 
 
 def draw_line(display, positions):
