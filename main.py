@@ -91,18 +91,6 @@ def main_loop(display, points, cam):
         if keys[pg.K_p]:
             if cam.look_distance > 1:
                 cam.look_distance -= 0.1
-        # if keys[pg.K_w]:
-        #     cam.look_position = cam.look_position.add(Vector3(0.01, 0, 0))
-        # if keys[pg.K_s]:
-        #     cam.look_position = cam.look_position.add(Vector3(-0.01, 0, 0))
-        # if keys[pg.K_a]:
-        #     cam.look_position = cam.look_position.add(Vector3(0, 0, -0.01))
-        # if keys[pg.K_d]:
-        #     cam.look_position = cam.look_position.add(Vector3(0, 0, 0.01))
-        # if keys[pg.K_SPACE]:
-        #     cam.look_position = cam.look_position.add(Vector3(0, 0.01, 0))
-        # if keys[pg.K_LSHIFT]:
-        #     cam.look_position = cam.look_position.add(Vector3(0, -0.01, 0))
 
         cam.recalculate()
         display.fill(COLORS["WHITE"])
@@ -123,4 +111,5 @@ def main_loop(display, points, cam):
     exit()
 
 
-init()
+if __name__ == "__main__":
+    init()
